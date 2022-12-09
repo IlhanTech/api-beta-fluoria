@@ -14,5 +14,4 @@ function key_gen() {
     return ($key);
 }
 
-
 ?>

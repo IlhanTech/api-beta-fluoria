@@ -3,26 +3,26 @@
 include "base.php";
 
 function know_access() {
-    $bdd = base_info();
-    $player = $_GET["player"];
-    $host = $bdd[0];
-    $username = $bdd[1];
-    $password = $bdd[2];
-    $dbname =$bdd[3];
-    $db = new PDO('mysql:host=' . $host . ';dbname=' . $dbname .'; charset=utf8' , $username , $password);
-    $reponse = $db->query('SELECT * FROM `players`');
-
+    $player = $key = NULL;
+    $arr = pdo_tab();
+    $db = new PDO($arr[0], $arr[1], $arr[2]);
+    if (isset($_GET["player"]))
+        $player = $_GET["player"];
     if ($player == NULL && $key == NULL) {
+        echo 'FALSE';
         return NULL;
     }
-    while ($donnees = $reponse->fetch()) {
-        if (strcmp($donnees['player'], $player) == 0) {
-            echo 'TRUE';
-            return (TRUE);
-        } else  {
-            echo 'FALSE';
-            return (FALSE);
-        }
+    $sql = "SELECT `player` FROM `players` WHERE `player` = :player";
+    $query = $db->prepare($sql);
+    $query->bindParam(':player', $player);
+    $query->execute();
+    $result = $query->fetch();
+    if ($result === false) {
+        echo 'FALSE';
+        return FALSE;
     }
+    echo 'TRUE';
+    return TRUE;
 }
+
 know_access();

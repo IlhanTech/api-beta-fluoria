@@ -1,0 +1,171 @@
+body {
+    margin: 0 500px 0 500px;
+    height: 100%;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+.div-form1, .div-form2, .info-client, .module-key-generate {
+    margin: auto;
+    display: table;
+    text-align: center;
+}
+
+img.logo  {
+    margin-left: 61px;
+}
+
+.div-father {
+    background: #f8f9fa2b !important;
+    color: #fff;
+    text-shadow: 1px 1px 5px #000;
+    border: 1px solid #2da44f;
+    margin-bottom: 40px !important;
+    background: #f7f7f7;
+    box-shadow: 0px 2px 2px rgb(0 0 0 / 30%);
+    padding: 30px;
+}
+
+.div-form1, .div-form2, .module-key-generate {
+    display: table-caption;
+    width: 50%;
+}
+
+.div-form1 {
+    margin-bottom: 10px;
+}
+
+.div-form2 {
+    margin-bottom: 20px;
+}
+
+h2.info-client {
+    width: 300px;
+    margin-bottom: 15px;
+}
+
+h2.info {
+    width: 378px;
+    margin: auto;
+}
+
+.pseudo {
+    width: 300px !important;
+    height: 40px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    border-radius: 3px;
+}
+
+input {
+    width: 308px !important;
+    height: 35px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+}
+
+.gen:hover {
+    color: #fff;
+    filter: brightness(80%);
+    background-color: #2da44f;
+    border-color: #2da44f;
+}
+
+.gen {
+    color: #fff;
+    background-color: #2da44f;
+    border-color: #2da44f;
+    min-height: 38px;
+    border-radius: 2px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+.buttongreen {
+    width: 308px !important;
+    height: 35px;
+    border-radius: 3px;
+}
+
+select {
+    width: 308px;
+    height: 40px;
+    margin-bottom: 15px;
+    border-radius: 3px;
+}
+
+textarea {
+    width: 302px;
+    font-size: 13px;
+    height: 15px;
+    border-radius: 3px;
+}
+
+button {
+    width: 308px;
+    height: 25px;
+    color: #fff;
+    background-color: #2da44f;
+    border-color: #2da44f;
+    min-height: 38px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+button:hover {
+    color: #fff;
+    filter: brightness(80%);
+    background-color: #2da44f;
+    border-color: #2da44f;
+}
+
+html {
+    align-items: center;
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    height: 100%;
+    margin:0;
+    padding:0;
+    background-size: 100% ;
+    width:100%;
+    color:black;
+}
+
+html:before {
+    content: "";
+    position: fixed;
+    height: 100%; width: 100%;
+    background: url(http://fluoria.fr/storage/img/spawn.jpg);
+    background-size: cover;
+    z-index: -1;
+    filter: blur(4px);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.error {
+	color: #D8000C;
+	background-color: #FFBABA;
+    border: 1px solid #D8000C;
+    text-align: center;
+    text-align: center;
+    position: absolute;
+    top: 245px;
+    width: 517px;
+    height: 25px;
+}
+
+.success {
+	color: #2da44f;
+	background-color: #90EE90;
+    border: 1px solid #2da44f;
+    text-align: center;
+    text-align: center;
+    position: absolute;
+    top: 245px;
+    width: 517px;
+    height: 25px;
+}
